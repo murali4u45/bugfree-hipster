@@ -1,12 +1,10 @@
 var http = require("http");
 var url = require("url");
-//require('../util/log');
-var router = require("../routes/router");
+
 var requestHandlers = require("../routes/requestHandlers");
 
 require('heapdump');
 
-//var mailer = require("../util/mailer");
 var handle = {}
 handle["/"] = requestHandlers.start;
 handle["/start"] = requestHandlers.start;
@@ -18,7 +16,7 @@ var server = http.createServer(function(request, response)
 	//count++;
 	var pathname = url.parse(request.url).pathname;
 	console.log("Request for " + pathname + " received." +count);
-	//router.route(handle, pathname, response, request);
+
 	
 	if (typeof handle[pathname] === 'function')
 	{
