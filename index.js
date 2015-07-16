@@ -1,4 +1,6 @@
+console.log("welcome here")
 var http = require("http");
+
 var url = require("url");
 
 var requestHandlers = require("../routes/requestHandlers");
