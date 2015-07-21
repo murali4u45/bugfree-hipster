@@ -1,4 +1,4 @@
-console.log("hello")
+
 var http = require("http");
 
 var url = require("url");
