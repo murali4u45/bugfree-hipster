@@ -1,6 +1,6 @@
 console.log("fghfh")
 var http = require("http");
-console.log("fghfh")
+
 var url = require("url");
 
 var requestHandlers = require("../routes/requestHandlers");
